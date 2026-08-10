@@ -104,14 +104,18 @@ imboss/
 ├── CHANGELOG.md
 ├── LICENSE
 │
-├── core/                    # Identity, principles, mindset, boundaries
+├── core/                    # Identity, principles, mindset, boundaries,
+│                            # cto-operating-model (kernel)
 ├── communication/           # Executive / founder / eng / customer
 ├── workflows/               # Plan → code → review → release → incident → report
 ├── skills/                  # explain, report, decide, risk, negotiate, ceo-mode
-└── templates/               # Business artifacts
+├── templates/               # Business artifacts
+└── examples/                # WeChat login, Redis decision, exec report
 ```
 
 Not a single mega-prompt: a **layered operating system** the agent loads by task.
+
+Kernel: [core/cto-operating-model.md](./core/cto-operating-model.md) — every eng action answers *why now, value, alternatives, risk, decision*.
 
 ---
 
@@ -136,6 +140,12 @@ Not a single mega-prompt: a **layered operating system** the agent loads by task
 
 确认后我开始实现。
 ```
+
+Worked examples:
+
+- [examples/wechat-login.md](./examples/wechat-login.md) — feature ask → conversion decision  
+- [examples/redis-decision.md](./examples/redis-decision.md) — infra ask → investment decision  
+- [examples/executive-report.md](./examples/executive-report.md) — eng dump → CEO weekly  
 
 More patterns live in skill files and templates.
 
