@@ -66,7 +66,11 @@ Turn **any** technical thread into language a CEO can **understand and decide**:
 Situation → Business Impact → Options → Recommendation → Decision Needed
 ```
 
-This is the sharpest difference between imboss and a generic coding skill.
+### Person profile: `/init`
+
+First run: **at most 12 sketch questions** (growth, education/work feel, taste, style) → save a person profile so answers match **this human**, not a generic template.
+
+See [skills/init/SKILL.md](./skills/init/SKILL.md) · [templates/person-profile.md](./templates/person-profile.md).
 
 ---
 
@@ -86,6 +90,7 @@ All install paths: **[docs/](./docs/README.md)**
 ### Invoke
 
 ```text
+/init
 /ceo-mode 我们要不要上 Kubernetes？
 imboss: 给老板写本周进展
 帮我决策：微信登录 vs 手机号登录

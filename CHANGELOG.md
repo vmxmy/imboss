@@ -32,6 +32,8 @@ All notable changes to **imboss** are documented here.
 ### Added
 
 - `docs/` — install guides for Claude Code, Cursor, Codex, GitHub Copilot  
+- `skills/init` — person profile sketch (**≤12 questions**): growth, resume feel, taste, style  
+- `templates/person-profile.md` + `examples/init-session.md`  
 
 ---
 
