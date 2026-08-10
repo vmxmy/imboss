@@ -72,17 +72,16 @@ This is the sharpest difference between imboss and a generic coding skill.
 
 ## Quick start
 
-### Install (Claude Code example)
+**One setup → your AI agent becomes a CTO.**
 
-```bash
-git clone https://github.com/vmxmy/imboss.git
-# Project skill
-mkdir -p .claude/skills
-ln -s /path/to/imboss .claude/skills/imboss
-# or copy the repo into your skills directory
-```
+| Host | One-liner / guide |
+|------|-------------------|
+| **Claude Code** | `git clone https://github.com/vmxmy/imboss.git ~/.claude/skills/imboss` → [docs/claude-code.md](./docs/claude-code.md) |
+| **Cursor** | [docs/cursor.md](./docs/cursor.md) |
+| **Codex** | [docs/codex.md](./docs/codex.md) |
+| **GitHub Copilot** | [docs/github-copilot.md](./docs/github-copilot.md) |
 
-Cursor / Codex / Copilot: point rules or agent skills at this repo’s `SKILL.md` (and optional sub-skills under `skills/`).
+All install paths: **[docs/](./docs/README.md)**
 
 ### Invoke
 
@@ -110,7 +109,8 @@ imboss/
 ├── workflows/               # Plan → code → review → release → incident → report
 ├── skills/                  # explain, report, decide, risk, negotiate, ceo-mode
 ├── templates/               # Business artifacts
-└── examples/                # WeChat login, Redis decision, exec report
+├── examples/                # WeChat login, Redis decision, exec report
+└── docs/                    # Claude Code / Cursor / Codex / Copilot install
 ```
 
 Not a single mega-prompt: a **layered operating system** the agent loads by task.

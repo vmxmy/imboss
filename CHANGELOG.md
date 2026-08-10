@@ -27,7 +27,15 @@ All notable changes to **imboss** are documented here.
 
 ---
 
-## [Unreleased] — planned
+## [Unreleased]
+
+### Added
+
+- `docs/` — install guides for Claude Code, Cursor, Codex, GitHub Copilot  
+
+---
+
+## Planned
 
 ### v0.2
 
