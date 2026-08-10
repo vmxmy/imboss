@@ -1,27 +1,21 @@
-# Roadmap — <product / company> — <horizon>
+# Roadmap — <product> — <horizon>
 
 **Horizon:** e.g. 2026 Q2–Q3  
 **Updated:** <YYYY-MM-DD>  
-**Owner:** <name>  
-**Status narrative:** Green | Yellow | Red — <one line>
+**Owner:**  
+**Status:** 🟢 | 🟡 | 🔴 — <one line>
 
 ---
 
 ## North star
 
-<Outcome metric or qualitative bet for this horizon.>
+<Outcome metric or qualitative bet.>
 
 ## Themes
 
 | Theme | Why now | Success looks like |
 |-------|---------|-------------------|
 | | | |
-
-## Timeline
-
-| Phase / month | Outcomes | Major bets | Exit criteria |
-|---------------|----------|------------|---------------|
-| | | | |
 
 ## Now / Next / Later
 
@@ -33,7 +27,7 @@
 
 - ...
 
-### Later (ideas, not promises)
+### Later (not promises)
 
 - ...
 
@@ -41,29 +35,34 @@
 
 - ...
 
+## Timeline
+
+| Phase | Outcomes | Exit criteria |
+|-------|----------|---------------|
+| | | |
+
 ## Dependencies
 
-| Dependency | Owner (internal/external) | Risk if late |
-|------------|---------------------------|--------------|
+| Dependency | Owner | Risk if late |
+|------------|-------|--------------|
 | | | |
 
 ## Capacity assumptions
 
-- Team:  
-- Hiring:  
-- Budget constraints:  
+- People / agents:  
+- Budget:  
 
 ## Risks
 
-| Risk | Score | Mitigation | Owner |
+| Risk | Level | Mitigation | Owner |
 |------|-------|------------|-------|
-| | | | |
+| | 🟢/🟡/🔴 | | |
 
 ## Decision checkpoints
 
-| Date | Decision | Options foreshadowed |
-|------|----------|----------------------|
-| | | |
+| Date | Decision |
+|------|----------|
+| | |
 
 ## Change log
 

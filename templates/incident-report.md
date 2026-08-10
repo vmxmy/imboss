@@ -2,19 +2,18 @@
 
 **ID:** <INC-YYYYMMDD-##>  
 **Severity:** S1 | S2 | S3 | S4  
-**Status:** Investigating | Mitigated | Resolved | Postmortem complete  
-**Start (UTC):** <timestamp>  
-**Detect:** <timestamp>  
-**Mitigate / restore:** <timestamp>  
-**Resolve:** <timestamp>  
-**Commander:** <name>  
-**Author:** <name / imboss>
+**Status:** Investigating | Mitigated | Resolved  
+**Start (UTC):**  
+**Detected:**  
+**Mitigated / restored:**  
+**Resolved:**  
+**Commander:**  
 
 ---
 
 ## Summary (user impact first)
 
-<What users saw / could not do. How many / how long. Money or data impact if any.>
+<What users could not do. How many / how long. Money or data impact.>
 
 ## Timeline
 
@@ -29,40 +28,37 @@
 
 **Confirmed | Working theory**
 
-<Plain language. Avoid blame; describe systems and decisions.>
+<Plain language. Systems and decisions, not blame.>
 
 ## Blast radius
 
-- Users / segments affected:  
-- Data impact: none | possible | confirmed  
+- Users / segments:  
+- Data: none | possible | confirmed  
 - Related systems:  
 
 ## Fix & mitigation
 
-| Action | Type (mitigate / fix / prevent) | Owner | Status |
-|--------|----------------------------------|-------|--------|
-| | | | |
+| Action | Type | Owner | Status |
+|--------|------|-------|--------|
+| | mitigate / fix / prevent | | |
 
 ## Communication
 
-| Time | Audience | Channel | Message summary |
-|------|----------|---------|-----------------|
-| | | | |
+| Time | Audience | Channel | Summary |
+|------|----------|---------|---------|
+| | founder / customers | | |
 
-## Prevention (postmortem actions)
+## Prevention
 
 | Action | Owner | Due | Done |
 |--------|-------|-----|------|
 | | | | |
 
-## Lessons
+## Business lessons
 
-- What went well:  
-- What went poorly:  
+- What to tell the company:  
 - Process change:  
 
 ## Links
 
-- Dashboards:  
-- PRs / deploys:  
-- Tickets:  
+- Dashboards / PRs / tickets:  

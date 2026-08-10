@@ -1,167 +1,166 @@
-# imboss
+# imboss — AI CTO Operating System
 
-**The AI CTO Operating System for Non-Technical Builders**
+**A technical leadership skill for non-technical builders using AI coding agents.**
 
-> Empower agent coding with business communication, technical translation, risk management, and executive reporting.
+中文：**面向 AI 原生创业者和非技术开发者的 AI CTO 操作系统。**
 
-`imboss` is not a single prompt. It is a **unified personality and operating layer** that turns coding agents into an AI CTO — someone who can ship code *and* speak founder, board, and team language.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Version](https://img.shields.io/badge/version-0.1-blue.svg)](./CHANGELOG.md)
 
 ---
 
 ## Why imboss
 
-Most agent skills optimize for **writing code**. Non-technical builders need more:
+Traditional software org:
 
-| Gap | What imboss fills |
-|-----|-------------------|
-| Tech ↔ business | Translate PRDs, tickets, and architecture into plain language |
-| Decision quality | Force options, tradeoffs, recommendation, and residual risk |
-| Risk blindness | Surface security, delivery, and product risks before they explode |
-| Reporting chaos | Weekly, executive, and incident reports that busy people can scan |
-| Vague asks | Turn fuzzy founder intent into crisp agent-ready requests |
+```text
+CEO
+ │
+CTO
+ │
+Engineering Team
+ │
+Code
+```
 
-If Claude Code / Cursor / Codex / Copilot write the code, **imboss owns the judgment layer**.
+AI-native org:
+
+```text
+CEO / Founder
+ │
+imboss Agent
+ │
+Coding Agents
+ │
+Code
+```
+
+**imboss is not:**
+
+- a programmer  
+- a PM  
+- a secretary  
+- a commit summarizer  
+
+**imboss is:**
+
+> a business-aware **CTO** — so a non-technical founder can run technical delivery through coding agents.
 
 ---
 
-## What it is
+## What you get
 
-A portable **Agent Skill pack** you can drop into:
+| Responsibility | Meaning |
+|----------------|---------|
+| **Translate** | Technical → business language a founder can use |
+| **Protect** | Risks, hidden costs, future locks |
+| **Report** | CEO-grade progress (not file/commit dumps) |
+| **Decide** | Options, trade-offs, one recommendation |
+| **Execute** | Align → plan → coding agents → review → business report |
 
-- **Claude Code** — project or user skills
-- **Cursor** — rules / skills
-- **Codex** — instructions / skills
-- **GitHub Copilot** — agent skills
-- Any agent that loads markdown skill files
+### Killer feature: `/ceo-mode`
 
-Same voice. Same decision framework. Same report templates.
+Turn **any** technical thread into language a CEO can **understand and decide**:
+
+```text
+Situation → Business Impact → Options → Recommendation → Decision Needed
+```
+
+This is the sharpest difference between imboss and a generic coding skill.
 
 ---
 
 ## Quick start
 
-### 1. Clone
+### Install (Claude Code example)
 
 ```bash
-git clone https://github.com/<you>/imboss.git
+git clone https://github.com/vmxmy/imboss.git
+# Project skill
+mkdir -p .claude/skills
+ln -s /path/to/imboss .claude/skills/imboss
+# or copy the repo into your skills directory
 ```
 
-### 2. Install into your agent
+Cursor / Codex / Copilot: point rules or agent skills at this repo’s `SKILL.md` (and optional sub-skills under `skills/`).
 
-**Claude Code** (example):
+### Invoke
 
-```bash
-# Project-scoped
-cp -r imboss/.claude-skills/* .claude/skills/   # or map SKILL.md paths as you prefer
-
-# Or symlink the whole skill tree
-ln -s /path/to/imboss ~/.claude/skills/imboss
+```text
+/ceo-mode 我们要不要上 Kubernetes？
+imboss: 给老板写本周进展
+帮我决策：微信登录 vs 手机号登录
+上线前做一次 risk review
 ```
-
-**Cursor / Codex / Copilot**: point rules or skill roots at this repo (or copy `SKILL.md` + `skills/*`).
-
-### 3. Invoke
-
-Natural language triggers work well:
-
-- “用 imboss 帮我规划这周工程重点”
-- “imboss: explain this architecture to a non-tech cofounder”
-- “Write an executive summary of what we shipped”
-- “Turn this founder request into a technical ticket”
-- “Risk-check this launch plan”
-
-Or call a sub-skill directly: `imboss-plan`, `imboss-report`, `imboss-explain`, `imboss-request`, `imboss-risk`.
 
 ---
 
 ## Repository layout
 
-```
+```text
 imboss/
 ├── README.md
+├── SKILL.md                 # Agent entry
+├── CHANGELOG.md
 ├── LICENSE
-├── SKILL.md                    # Root skill — AI CTO persona + routing
-├── principles.md               # Operating principles
-├── communication.md            # How imboss speaks
-├── reporting.md                # Reporting doctrine
-├── decision-framework.md       # How decisions get made
-├── risk-management.md          # Risk taxonomy & process
-├── technical-translation.md    # Business ↔ tech translation
 │
-├── skills/
-│   ├── imboss-plan/            # Plan work like a CTO
-│   ├── imboss-report/          # Weekly / exec / incident reports
-│   ├── imboss-explain/         # Explain tech to non-tech
-│   ├── imboss-request/         # Crisp tickets & RFCs from intent
-│   └── imboss-risk/            # Risk review & mitigation
-│
-├── templates/
-│   ├── weekly-report.md
-│   ├── executive-summary.md
-│   ├── decision-request.md
-│   ├── incident-report.md
-│   └── roadmap.md
-│
-└── examples/
-    ├── before-after.md
-    ├── founder-mode.md
-    └── manager-report.md
+├── core/                    # Identity, principles, mindset, boundaries
+├── communication/           # Executive / founder / eng / customer
+├── workflows/               # Plan → code → review → release → incident → report
+├── skills/                  # explain, report, decide, risk, negotiate, ceo-mode
+└── templates/               # Business artifacts
 ```
 
----
-
-## Core modules
-
-| File | Role |
-|------|------|
-| [SKILL.md](./SKILL.md) | Persona, when to use, sub-skill routing |
-| [principles.md](./principles.md) | Non-negotiables of the AI CTO |
-| [communication.md](./communication.md) | Tone, structure, audience modes |
-| [reporting.md](./reporting.md) | What good reporting looks like |
-| [decision-framework.md](./decision-framework.md) | Options → tradeoffs → decide |
-| [risk-management.md](./risk-management.md) | Identify, score, mitigate, accept |
-| [technical-translation.md](./technical-translation.md) | Jargon out, business in |
+Not a single mega-prompt: a **layered operating system** the agent loads by task.
 
 ---
 
-## Sub-skills
+## Example
 
-| Skill | Intent |
-|-------|--------|
-| `imboss-plan` | Prioritize, sequence, estimate, and de-risk a plan |
-| `imboss-report` | Weekly, executive, or incident report from raw notes |
-| `imboss-explain` | Explain technical topics to founders / PMs / board |
-| `imboss-request` | Convert fuzzy asks into agent-ready specs |
-| `imboss-risk` | Pre-mortem, launch review, security/delivery risk |
+**User:** 加微信登录  
+
+**imboss:**
+
+```text
+我理解你的目标：减少注册流失，提高新用户转化。
+
+方案1：微信 OAuth 登录
+- 时间：2–3 天
+- 风险：依赖微信平台与审核
+
+方案2：手机号登录
+- 时间：约 1 天
+- 风险：短信成本
+
+建议：第一阶段用手机号登录——更快验证商业价值；微信登录作为下一阶段。
+
+确认后我开始实现。
+```
+
+More patterns live in skill files and templates.
+
+---
+
+## Roadmap
+
+| Version | Focus |
+|---------|--------|
+| **v0.1** (now) | CTO personality: translate, report, decide, risk, `/ceo-mode` |
+| **v0.2** | Project mgmt, budget, tech-debt ledger, hiring assist |
+| **v0.3** | Multi-agent org (frontend / backend / QA / DevOps under imboss) |
 
 ---
 
 ## Design principles (preview)
 
-1. **Business outcome first** — code is a means, not the headline.
-2. **One recommendation** — options are fine; fence-sitting is not.
-3. **Risks are first-class** — never bury them under “next steps”.
-4. **Audience-aware** — founder, eng, board get different altitudes.
-5. **Actionable defaults** — every doc ends with owners and next moves.
-6. **No theater** — no fake certainty, no status padding, no jargon for status.
+1. Outcome over activity  
+2. One recommendation  
+3. Risks are first-class  
+4. Audience-aware altitude  
+5. No theater, no false ease  
+6. Align before large agent coding  
 
-Full list: [principles.md](./principles.md).
-
----
-
-## Positioning
-
-```
-imboss — The AI CTO Operating System for Non-Technical Builders
-```
-
-Not “another coding skill”. A **judgment and communication OS** that sits on top of coding agents so non-technical builders can run product engineering with executive clarity.
-
----
-
-## Version
-
-**v0.1** — first public skill pack (docs, sub-skills, templates, examples).
+Full text: [core/principles.md](./core/principles.md) · [core/boundaries.md](./core/boundaries.md)
 
 ---
 
@@ -173,4 +172,5 @@ Not “another coding skill”. A **judgment and communication OS** that sits on
 
 ## Contributing
 
-PRs welcome for templates, examples, and agent-specific install notes. Keep the persona sharp: **AI CTO, not AI intern**.
+PRs welcome for templates, workflow clarity, and agent-host install notes.  
+Keep the bar: **AI CTO, not AI intern.**
